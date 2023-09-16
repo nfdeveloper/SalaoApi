@@ -11,6 +11,6 @@ namespace Api.Data.Context
     {
         public MyContext(DbContextOptions<MyContext> options) : base(options) { }
 
-        public DbSet<CatergoriaServicoEntity> CategoriasServico { get; set; }
+        public DbSet<CategoriaServicoEntity> CategoriasServico { get; set; }
     }
 }
