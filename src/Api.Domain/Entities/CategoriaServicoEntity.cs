@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Api.Domain.Entities
 {
     [Table("service_category")]
-    public class CatergoriaServicoEntity : BaseEntity
+    public class CategoriaServicoEntity : BaseEntity
     {
         [Column(name:"description")]
         public string Descricao { get; set; }
