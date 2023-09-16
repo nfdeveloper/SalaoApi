@@ -21,7 +21,9 @@ namespace Api.Domain.Entities
         [DataType(DataType.Text)]
         [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
         public DateTime UpdatedAt { get;set; } = DateTime.Now;
+        [Column(name:"user_create")]
         public String UsuarioCriacao { get;set; }
+        [Column(name:"user_update")]
         public String UsuarioAlteracao { get;set; }
     }
 }

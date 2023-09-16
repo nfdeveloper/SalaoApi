@@ -11,7 +11,7 @@ namespace Api.Data.Context
     {
         public MyContext CreateDbContext(string[] args)
         {
-            var connectionString = "";
+            var connectionString = "server=localhost;port=3306;database=salao;uid=root;password=docker";
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
             optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
             return new MyContext(optionsBuilder.Options);
