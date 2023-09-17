@@ -13,7 +13,7 @@ namespace Api.Domain.Entities
         public string Titulo { get; set; }
         [Column(name:"description")]
         public string Descricao { get; set; }
-        [Column(name:"value")]
+        [Column(name:"value",TypeName = "decimal(18,2)")]
         public double Valor { get; set; }
         [Column(name:"duration_hours")]
         public int DuracaoHoras { get;set; }

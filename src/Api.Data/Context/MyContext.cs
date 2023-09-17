@@ -14,5 +14,6 @@ namespace Api.Data.Context
         public DbSet<CategoriaServicoEntity> CategoriasServico { get; set; }
         public DbSet<TipoPagamentoEntity> TiposPagamentos { get;set; }
         public DbSet<ServicoEntity> Servicos { get;set; }
+        public DbSet<FuncionarioEntity> Funcionarios { get;set; }
     }
 }
