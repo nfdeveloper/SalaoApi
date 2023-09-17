@@ -10,8 +10,8 @@ namespace Api.Domain.Interfaces.Services.TipoPagamento
     {
         Task<TipoPagamentoEntity> Get(int id);
         Task<IEnumerable<TipoPagamentoEntity>> GetAll();
-        Task<TipoPagamentoEntity> Post(TipoPagamentoEntity);
-        Task<TipoPagamentoEntity> Put(TipoPagamentoEntity);
+        Task<TipoPagamentoEntity> Post(TipoPagamentoEntity tipoPagamento);
+        Task<TipoPagamentoEntity> Put(TipoPagamentoEntity tipoPagamento);
         Task<bool> Delete(int id);
     }
 }

@@ -12,5 +12,6 @@ namespace Api.Data.Context
         public MyContext(DbContextOptions<MyContext> options) : base(options) { }
 
         public DbSet<CategoriaServicoEntity> CategoriasServico { get; set; }
+        public DbSet<TipoPagamentoEntity> TiposPagamentos { get;set; }
     }
 }
