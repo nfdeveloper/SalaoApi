@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Api.Domain.Interfaces.Services.CategoriaServico;
+using Api.Domain.Interfaces.Services.ClienteServico;
 using Api.Domain.Interfaces.Services.Funcionario;
 using Api.Domain.Interfaces.Services.Servico;
 using Api.Domain.Interfaces.Services.TipoPagamento;
@@ -30,6 +31,7 @@ namespace Api.Infra.DependencyInjection
             serviceCollection.AddTransient<ITipoPagamentoService, TipoPagamentoService>();
             serviceCollection.AddTransient<IServicoService, ServicoService>();
             serviceCollection.AddTransient<IFuncionarioService, FuncionarioService>();
+            serviceCollection.AddTransient<IClienteService, ClienteService>();
         }
     }
 }
