@@ -6,6 +6,7 @@ using Api.Domain.Interfaces.Services.CategoriaServico;
 using Api.Domain.Interfaces.Services.ClienteServico;
 using Api.Domain.Interfaces.Services.Funcionario;
 using Api.Domain.Interfaces.Services.Servico;
+using Api.Domain.Interfaces.Services.StatusAtendimento;
 using Api.Domain.Interfaces.Services.TipoPagamento;
 using Api.Service.Services;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,6 +33,7 @@ namespace Api.Infra.DependencyInjection
             serviceCollection.AddTransient<IServicoService, ServicoService>();
             serviceCollection.AddTransient<IFuncionarioService, FuncionarioService>();
             serviceCollection.AddTransient<IClienteService, ClienteService>();
+            serviceCollection.AddTransient<IStatusAtendimentoService, StatusAtendimentoService>();
         }
     }
 }
