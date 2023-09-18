@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Api.Domain.Interfaces.Services.AtendimentoService;
 using Api.Domain.Interfaces.Services.CategoriaServico;
 using Api.Domain.Interfaces.Services.ClienteServico;
 using Api.Domain.Interfaces.Services.Funcionario;
@@ -34,6 +35,7 @@ namespace Api.Infra.DependencyInjection
             serviceCollection.AddTransient<IFuncionarioService, FuncionarioService>();
             serviceCollection.AddTransient<IClienteService, ClienteService>();
             serviceCollection.AddTransient<IStatusAtendimentoService, StatusAtendimentoService>();
+            serviceCollection.AddTransient<IAtendimentoService, AtedimentoService>();
         }
     }
 }
